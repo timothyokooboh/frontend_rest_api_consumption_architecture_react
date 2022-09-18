@@ -1,7 +1,7 @@
 # frontend_api_consumption_architecture_react
 Created with CodeSandbox
 
-This is an API consumption architecture pattern for frontend applications. <br>
+This is a REST API consumption architecture pattern for frontend applications. <br>
 A demo for its use in a React app is also provided <a href="https://codesandbox.io/s/github/timothyokooboh/frontend_api_consumption_architecture_react" target="_blank">here</a>
 
 <a href="https://github.com/timothyokooboh/frontend_rest_api_consumption_architecture_vue">Here</a> is the same architecture pattern demonstrated with Vue.js
@@ -25,7 +25,7 @@ which is a union type described below<br>
 
 export default APIEndpoint;
 ```
-4. A `useResource` hook that handles every API call thereby providing <br> a DRY approach to API consumption
+3. A `useResource` hook that handles every API call thereby providing <br> a DRY approach to API consumption
 across the entire application.
 
 ## Example Usage
