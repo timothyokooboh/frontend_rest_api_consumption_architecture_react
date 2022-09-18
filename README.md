@@ -11,7 +11,7 @@ A demo for its use in a React app is also provided.
 
 ## Key highlights
 1. Typed API endpoints.
-2. Endpoints documented as constants and then leverage the ` APIEndpoints` type <br>
+2. Endpoints documented as constants and then leverage the ` APIEndpoint` type <br>
 which is a union type <br>
 ```
   type APIEndpoint =
@@ -32,4 +32,12 @@ across the entire application.
   import { LIST_COUNTRIES } from "./const/countriesEndpoints";
 
   const { loading, response, error } = useResource(LIST_COUNTRIES);
+```
+Where `LIST_COUNTRIES` is a constant that documents the endpoint <br>
+for listing countries from an API
+```
+ export const LIST_COUNTRIES: GETAPIEndpoint = {
+  url: "/v3.1/all",
+  method: "GET"
+};
 ```
