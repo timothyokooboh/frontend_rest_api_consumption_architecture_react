@@ -1,5 +1,5 @@
 import useResource from "./hooks/useResource";
-import { LIST_COUNTRIES } from "./const/countriesEndpoints";
+import { LIST_COUNTRIES } from "./models/CountriesModel";
 
 export default function App() {
   const { loading, response, error } = useResource(LIST_COUNTRIES);
