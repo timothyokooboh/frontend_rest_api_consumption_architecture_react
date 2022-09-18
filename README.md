@@ -2,7 +2,7 @@
 Created with CodeSandbox
 
 This is an API consumption architecture pattern for frontend applications. <br>
-A demo for its use in a React app is also provided.
+A demo for its use in a React app is also provided <a href="https://codesandbox.io/s/github/timothyokooboh/frontend_api_consumption_architecture_react" target="_blank">here</a>
 
 ## Dependencies
 1. Typescript
