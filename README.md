@@ -13,8 +13,8 @@ A demo for its use in a React app is also provided <a href="https://codesandbox.
 
 ## Key highlights
 1. Typed API endpoints.
-2. Endpoints documented as constants and then leverage the ` APIEndpoint` type <br>
-which is a union type <br>
+2. Endpoints documented as constants that leverage the `APIEndpoint` type <br>
+which is a union type described below<br>
 ```
   type APIEndpoint =
   | GETAPIEndpoint
