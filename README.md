@@ -9,3 +9,7 @@ A demo for its use in a React app is also provided.
 2. Axios
 3. React
 
+## Key highlights
+1. Typed API endpoints.
+2. A `useResource` hook that handles every API calls thereby providing a DRY approach to API consumption
+across the entire application.
