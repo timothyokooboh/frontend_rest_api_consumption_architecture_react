@@ -26,7 +26,13 @@ which is a union type described below<br>
 export default APIEndpoint;
 ```
 3. A `useResource` hook that handles every API call thereby providing <br> a DRY approach to API consumption
-across the entire application.
+across the entire application. <br>
+This single custom hook returns three states to the consumer component <br>
+```
+a. loading
+b. response
+c. error
+```
 
 ## Example Usage
 ```
