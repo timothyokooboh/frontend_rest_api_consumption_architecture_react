@@ -1,11 +1,10 @@
 import { useEffect, useState } from "react";
-import { AxiosResponse } from "axios";
 import axios from "../http-client";
-import APIEndpoint from "../types";
+import APIEndpoint, { APIError, APIResponse } from "../types";
 
 const useResource = (endpoint: APIEndpoint) => {
-  const [response, setResponse] = useState<AxiosResponse>();
-  const [error, setError] = useState(null);
+  const [response, setResponse] = useState<APIResponse>(null);
+  const [error, setError] = useState<APIError>(null);
   const [loading, setLoading] = useState(false);
 
   useEffect(() => {

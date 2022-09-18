@@ -1,4 +1,4 @@
-import { AxiosRequestConfig } from "axios";
+import { AxiosRequestConfig, AxiosError, AxiosResponse } from "axios";
 
 type APIEndointConfig = Omit<AxiosRequestConfig, "method" | "data" | "params">;
 
@@ -41,5 +41,8 @@ type APIEndpoint =
   | PUTAPIEndpoint
   | PATCHAPIEndpoint
   | DELETEAPIEndpoint;
+
+export type APIError = AxiosError | null;
+export type APIResponse = AxiosResponse | null;
 
 export default APIEndpoint;
