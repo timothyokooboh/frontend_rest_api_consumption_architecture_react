@@ -11,7 +11,19 @@ A demo for its use in a React app is also provided.
 
 ## Key highlights
 1. Typed API endpoints.
-2. A `useResource` hook that handles every API call thereby providing <br> a DRY approach to API consumption
+2. Endpoints documented as constants and then leverage the ` APIEndpoints` type <br>
+which is a union type <br>
+```
+  type APIEndpoint =
+  | GETAPIEndpoint
+  | POSTAPIEndpoint
+  | PUTAPIEndpoint
+  | PATCHAPIEndpoint
+  | DELETEAPIEndpoint;
+
+export default APIEndpoint;
+```
+4. A `useResource` hook that handles every API call thereby providing <br> a DRY approach to API consumption
 across the entire application.
 
 ## Example Usage
