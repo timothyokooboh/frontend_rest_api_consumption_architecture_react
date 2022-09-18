@@ -11,5 +11,5 @@ A demo for its use in a React app is also provided.
 
 ## Key highlights
 1. Typed API endpoints.
-2. A `useResource` hook that handles every API calls thereby providing a DRY approach to API consumption
+2. A `useResource` hook that handles every API call thereby providing <br> a DRY approach to API consumption
 across the entire application.
